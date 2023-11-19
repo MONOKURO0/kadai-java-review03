@@ -24,7 +24,7 @@ public class BaseBallTeam {
     // 「勝ち数」と「負け数」から勝率を計算するメソッド
     public double getRate(int win, int lose) {
         // 勝率を計算する
-        double result = (double) win / (double) (win + lose);
+        double result = (double) win / (win + lose);
 
         return result;
     }
