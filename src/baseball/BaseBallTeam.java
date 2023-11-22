@@ -22,9 +22,9 @@ public class BaseBallTeam {
 
     /* メソッド */
     // 「勝ち数」と「負け数」から勝率を計算するメソッド
-    public double getRate(int win, int lose) {
+    public double getRate() {
         // 勝率を計算する
-        double result = (double) win / (win + lose);
+        double result = (double) this.win / (this.win + this.lose);
 
         return result;
     }
@@ -32,7 +32,7 @@ public class BaseBallTeam {
     // 勝敗情報の表示を行うメソッド
     public void report() {
         // 勝率を計算する
-        double winper = getRate(this.win, this.lose);
+        double winper = getRate();
 
         // 勝敗情報の表示
         System.out.println(
